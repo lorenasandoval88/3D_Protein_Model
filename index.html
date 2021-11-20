@@ -1,75 +1,168 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-	
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-<meta name="Lorena Sandoval" content="Binf 731">
-<title>HEBP1,Heme-binding protein 1</title>
 
-<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
-<style type="text/css">
-.style1 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: larger; }
-.style2 {font-family: Verdana, Arial, Helvetica, sans-serif}
-.style3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
-.style4 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #F00; }
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="Lorena Sandoval" content="Binf 731">
+	<title>SERHL_HUMAN</title>
 
-<script type="text/javascript">
-//http://faculty.smu.edu/svik/6312/jmol_lessons/Lesson6.html
-//Jmol.debugCode = true
+	<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+	<style type="text/css">
+		.style1 {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: larger;
+		}
 
-var myJmol;
-var Info = {
-    width: 800,
-	height: 800,
-	debug: false,
-	color: "#ffffff",
-	//addSelectionOptions: false,
-	serverURL: "jsmol/php/jsmol.php",
-	jarFile: "JmolApplet.jar",
-	jarPath: '..',
-	j2sPath: "jsmol/j2s",
-	use: "HTML5",
-	script: "load pdb_files/HEBP1.pdb",
+		.style2 {
+			font-family: Verdana, Arial, Helvetica, sans-serif
+		}
 
-	//console: "myJmol1_infodiv",
-	disableJ2SLoadMonitor: true,
-	disableInitialConsole: true,
-	allowJavaScript: true,
-	console: "none", // default will be jmolApplet0_infodiv	
-}
-  function jmolButton(script, text) {Jmol.jmolButton(jmolApplet0, script,text)}
-function jmolHtml(s) { document.write(s) };
-function jmolBr() { jmolHtml("<br>") }
-function jmolMenu(a) {Jmol.jmolMenu(jmolApplet0, a)} 
-</script>
+		.style3 {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-weight: bold;
+		}
+
+		.style4 {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			color: #F00;
+		}
+	</style>
+
+	<script type="text/javascript">
+		//http://faculty.smu.edu/svik/6312/jmol_lessons/Lesson6.html
+		//Jmol.debugCode = true
+
+		var myJmol;
+		var Info = {
+			width: 800,
+			height: 800,
+			debug: false,
+			color: "#ffffff",
+			//addSelectionOptions: false,
+			serverURL: "jsmol/php/jsmol.php",
+			jarFile: "JmolApplet.jar",
+			jarPath: '..',
+			j2sPath: "jsmol/j2s",
+			use: "HTML5",
+			script: "load pdb_files/SERHL_HUMAN_SwissModel_Pred_Structure.pdb",
+
+			//console: "myJmol1_infodiv",
+			disableJ2SLoadMonitor: true,
+			disableInitialConsole: true,
+			allowJavaScript: true,
+			console: "none", // default will be jmolApplet0_infodiv	
+		}
+
+		function jmolButton(script, text) {
+			Jmol.jmolButton(jmolApplet0, script, text)
+		}
+
+		function jmolHtml(s) {
+			document.write(s)
+		};
+
+		function jmolBr() {
+			jmolHtml("<br>")
+		}
+
+		function jmolMenu(a) {
+			Jmol.jmolMenu(jmolApplet0, a)
+		}
+	</script>
 </head>
 
-	<body bgcolor="#000088">
-<table width="1100" border="1" cellspacing="3" cellpadding="3">
-  <tr>
-    <td width="800"><div><script type="text/javascript">
-jmolApplet0 = Jmol.getApplet("jmolApplet0", Info);	
+<body bgcolor="#000088">
+	<table width="1100" border="1" cellspacing="3" cellpadding="3">
+		<tr>
+			<td width="800">
+				<div>
+					<script type="text/javascript">
+						jmolApplet0 = Jmol.getApplet("jmolApplet0", Info);
+					</script>
+				</div>
+			</td>
+			<td bgcolor="#efefef"><span class="style1"><strong>HEBP1, Heme-binding protein 1</strong></span>
+				<p class="style1">May bind free porphyrinogens that may be present in the cell and thus facilitate
+					removal of these potentially toxic compound. Binds with a high affinity to one molecule of heme or
+					porphyrins. It binds metalloporphyrins, free porphyrins and N-methylprotoporphyrin with similar
+					affinities.</p>
+				<br>
+				<p>
+					<script type="text/javascript">
+						jmolBr()
+						Jmol.setButtonCss(null, "style='width:100px'")
+						jmolButton("console")
+						Jmol.jmolCommandInput(jmolApplet0)
+					</script>
+				</p>
+				<hr>
+				<span class="style2">
+				</span>
+				<p class="style2">UniProtKB ID: <a href="https://www.uniprot.org/uniprot/Q9NQF3"
+						target="_blank">Q9NRV9</a></p>
+			</td>
+		</tr>
+	</table>
 
-    </script></div></td>
-    <td bgcolor="#efefef"><span class="style1"><strong>HEBP1, Heme-binding protein 1</strong></span>
-<p class="style1">May bind free porphyrinogens that may be present in the cell and thus facilitate removal of these potentially toxic compound. Binds with a high affinity to one molecule of heme or porphyrins. It binds metalloporphyrins, free porphyrins and N-methylprotoporphyrin with similar affinities.</p>
-      <br>
-      <p><script type="text/javascript">
-jmolBr()
-Jmol.setButtonCss(null,"style='width:100px'")
-jmolButton("console")
-Jmol.jmolCommandInput(jmolApplet0)
-		  
-	</script></p>
-	<hr>
-    <span class="style2">
-</span><p class="style2">UniProtKB ID:  <a href="https://www.uniprot.org/uniprot/Q9NRV9#function" target="_blank">Q9NRV9</a></p>
-      </td>
-  </tr>
-</table>
-		
-			
-	</body>
+
+	<div class="myDiv" style="background-color:rgb(255, 255, 255);">
+		<h2>Sequence Selection</h2>
+		<p>I looked up proteins in Uniprot, filtering by enzyme, length of 150-250 aa, not in PDB
+			and protein existence is uncertain. This gave me a total of 31 hits in Uniprot.
+
+			<br><br>I chose SERHL_HUMAN, Serine hydrolase-like protein<br><br>
+			>sp|Q9NQF3|SERHL_HUMAN Serine hydrolase-like protein OS=Homo sapiens OX=9606 GN=SERHL PE=5 SV=1
+			MAENAAPGLISELKLAVPWGHIAAKAWGSLQGPPVLCLHGWLDNASSFDRLIPLLPQDFY
+			YVAMDFGGHGLSSHYSPGVPYYLQTFVSEIRRVVAALKWNRFSILGHSFGGVVGGMFFCT
+			FPEMVDKLILLDTPLFLLESDEMENLLTYKRRAIEHVLQVEASQEPSHVFSLKQLLQRQR
+			TALTSSAGSCVRIPSGSCRPMSC
+
+			<br><br>The SERHL_HUMAN protein was then run in PDB to find structure with 
+			similar sequences which resulted in 18 structures with identity no greater than 41% 
+			and at least 30%. All of these structures either hydrolases or oxidoreductases
+			found in bacteria.
+		</p>
+	</div>
+
+	<div class="myDiv" style="background-color:rgb(175, 240, 202);">
+		<h2>Predicted 3D Structure</h2>
+		<p>I used SwissModel and Phyre2 to predict protein structure.
+			<br><br>
+
+			<br><br>
+		</p>
+	</div>
+
+	<div class="myDiv" style="background-color:rgb(235, 135, 197);">
+		<h2>Predicted 3D Structure Validation</h2>
+		<p>I used Procheck to verify the predicted structure. Procheck
+			checks the stereochemical quality of a protein structure by 
+			analyzing residue-by-residue geometry and overall structure geometry.
+			<br><br>
+			Results:
+			<br><br>
+			Two passed checks out of 8 including, ramachandrans and chi1-chi2 plots.
+
+			<br><br>
+		</p>
+	</div>
+
+	<div class="myDiv" style="background-color:rgb(240, 226, 149);">
+		<h2>Biologicaly important domain and Predicted Structure Mutation</h2>
+		<p>According to Uniprot, the SERHL_HUMAN protein has a hydrolase domain in 
+			positions 33-145. Residues GPPV 32-35 were removed from the beginning of 
+			the protein domain because Proline is known for causing turns
+			<br><br>
+
+			<br><br>
+		</p>
+	</div>
+</body>
+
 </html>
-		
+
+
+</body>
+
+</html>
