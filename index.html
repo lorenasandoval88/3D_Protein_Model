@@ -107,26 +107,26 @@
 
 
 	<div class="myDiv" style="background-color:rgb(255, 255, 255);">
-		<h2>Sequence Selection</h2>
+		<h2>Sequence Selection In Uniprot, Identity filtering in PDB</h2>
 		<p>I looked up proteins in Uniprot, filtering by enzyme, length of 150-250 aa, not in PDB
-			and protein existence is uncertain. This gave me a total of 31 hits in Uniprot.
+			and protein existence is uncertain. This gave me a total of 31 hits in Uniprot,
+			of which I chose SERHL_HUMAN, Serine hydrolase-like protein<br><br>
 
-			<br><br>I chose SERHL_HUMAN, Serine hydrolase-like protein<br><br>
 			>sp|Q9NQF3|SERHL_HUMAN Serine hydrolase-like protein OS=Homo sapiens OX=9606 GN=SERHL PE=5 SV=1
 			MAENAAPGLISELKLAVPWGHIAAKAWGSLQGPPVLCLHGWLDNASSFDRLIPLLPQDFY
 			YVAMDFGGHGLSSHYSPGVPYYLQTFVSEIRRVVAALKWNRFSILGHSFGGVVGGMFFCT
 			FPEMVDKLILLDTPLFLLESDEMENLLTYKRRAIEHVLQVEASQEPSHVFSLKQLLQRQR
 			TALTSSAGSCVRIPSGSCRPMSC
 
-			<br><br>The SERHL_HUMAN protein was then run in PDB to find structure with 
-			similar sequences which resulted in 18 structures with identity no greater than 41% 
-			and at least 30%. All of these structures either hydrolases or oxidoreductases
+			<br><br>I then ran it in PDB to find structures with 
+			similar sequences, resulting in 18 structures with identity no greater than 41% 
+			but at least 30%. All of these structures were either hydrolases or oxidoreductases
 			found in bacteria.
 		</p>
 	</div>
 
 	<div class="myDiv" style="background-color:rgb(175, 240, 202);">
-		<h2>Predicted 3D Structure</h2>
+		<h2>3D Structure Prediction in SwissModel and Phyre2 </h2>
 		<p>I used SwissModel and Phyre2 to predict protein structure.
 			<br><br>
 
@@ -135,7 +135,7 @@
 	</div>
 
 	<div class="myDiv" style="background-color:rgb(235, 135, 197);">
-		<h2>Predicted 3D Structure Validation</h2>
+		<h2>Structure Validation in Procheck</h2>
 		<p>I used Procheck to verify the predicted structure. Procheck
 			checks the stereochemical quality of a protein structure by 
 			analyzing residue-by-residue geometry and overall structure geometry.
@@ -149,12 +149,16 @@
 	</div>
 
 	<div class="myDiv" style="background-color:rgb(240, 226, 149);">
-		<h2>Biologicaly important domain and Predicted Structure Mutation</h2>
+		<h2>Domain  and Predicted Structure Mutation</h2>
 		<p>According to Uniprot, the SERHL_HUMAN protein has a hydrolase domain in 
 			positions 33-145. Residues GPPV 32-35 were removed from the beginning of 
-			the protein domain because Proline is known for causing turns.
+			the protein domain to see if it wouls cause a change in structure 
+			because Proline is known for causing turns.
 
-			The mutated protein has a beta sheet in plcae of a turn. 
+			The mutated protein has a beta sheet in place of a loop, confirming that 
+			the prolines were causing a turn and prohibiting a beta sheet or helix.
+			The addition of a beta sheet in the hydrolaze domain could prohibit binding and 
+			in turn function.
 			<br><br>
 
 			<br><br>
