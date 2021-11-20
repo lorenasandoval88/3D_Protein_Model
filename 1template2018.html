@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+<meta name="Lorena Sandoval" content="Binf 731">
+<title>HEBP1,Heme-binding protein 1</title>
+
+<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+<style type="text/css">
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: larger; }
+.style2 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.style3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style4 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #F00; }
+</style>
+
+<script type="text/javascript">
+//http://faculty.smu.edu/svik/6312/jmol_lessons/Lesson6.html
+//Jmol.debugCode = true
+
+var myJmol;
+var Info = {
+    width: 800,
+	height: 800,
+	debug: false,
+	color: "#ffffff",
+	//addSelectionOptions: false,
+	serverURL: "jsmol/php/jsmol.php",
+	jarFile: "JmolApplet.jar",
+	jarPath: '..',
+	j2sPath: "jsmol/j2s",
+	use: "HTML5",
+	script: "load pdb_files/HEBP1.pdb",
+
+	//console: "myJmol1_infodiv",
+	disableJ2SLoadMonitor: true,
+	disableInitialConsole: true,
+	allowJavaScript: true,
+	console: "none", // default will be jmolApplet0_infodiv	
+}
+  function jmolButton(script, text) {Jmol.jmolButton(jmolApplet0, script,text)}
+function jmolHtml(s) { document.write(s) };
+function jmolBr() { jmolHtml("<br>") }
+function jmolMenu(a) {Jmol.jmolMenu(jmolApplet0, a)} 
+</script>
+</head>
+
+	<body bgcolor="#000088">
+<table width="1100" border="1" cellspacing="3" cellpadding="3">
+  <tr>
+    <td width="800"><div><script type="text/javascript">
+jmolApplet0 = Jmol.getApplet("jmolApplet0", Info);	
+
+    </script></div></td>
+    <td bgcolor="#efefef"><span class="style1"><strong>HEBP1, Heme-binding protein 1</strong></span>
+<p class="style1">May bind free porphyrinogens that may be present in the cell and thus facilitate removal of these potentially toxic compound. Binds with a high affinity to one molecule of heme or porphyrins. It binds metalloporphyrins, free porphyrins and N-methylprotoporphyrin with similar affinities.</p>
+      <br>
+      <p><script type="text/javascript">
+jmolBr()
+Jmol.setButtonCss(null,"style='width:100px'")
+jmolButton("console")
+Jmol.jmolCommandInput(jmolApplet0)
+		  
+	</script></p>
+	<hr>
+    <span class="style2">
+</span><p class="style2">UniProtKB ID:  <a href="https://www.uniprot.org/uniprot/Q9NRV9#function" target="_blank">Q9NRV9</a></p>
+      </td>
+  </tr>
+</table>
+		
+			
+	</body>
+</html>
+		
