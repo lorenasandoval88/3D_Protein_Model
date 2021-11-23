@@ -36,7 +36,7 @@
 		var myJmol;
 		var Info = {
 			width: 800,
-			height: 800,
+			height: 700,
 			debug: false,
 			color: "#ffffff",
 			//addSelectionOptions: false,
@@ -73,9 +73,9 @@
 </head>
 
 <body bgcolor="#000088">
-	<table width="1100" border="1" cellspacing="3" cellpadding="3">
+	<table width="900" border="1" cellspacing="3" cellpadding="3">
 		<tr>
-			<td width="800">
+			<td width="900">
 				<div>
 					<script type="text/javascript">
 						jmolApplet0 = Jmol.getApplet("jmolApplet0", Info);
@@ -99,8 +99,8 @@
 	</table>
 
 
-	<div class="myDiv" style="background-color:rgb(255, 255, 255);">
-		<h2>Sequence Selection In Uniprot, Identity filtering in PDB</h2>
+	<div class="myDiv" width="900" style="background-color:rgb(255, 255, 255);">
+		<h2>Sequence Selection in Uniprot, Identity filtering in PDB</h2>
 		<p>I looked up proteins in Uniprot, filtering by enzyme, length of 150-250 aa, not in PDB
 			and protein existence is uncertain. This gave me a total of 31 hits in Uniprot,
 			of which I chose SERHL_HUMAN, Serine hydrolase-like protein<br><br>
@@ -135,8 +135,17 @@
 			<br><br>
 			Results:
 			<br><br>
-			2/8 checks passed, including ramachandran and chi1-chi2 plots.
-
+			2/8 checks passed, including ramachandran, with warnings, and chi1-chi2 plots.
+			There were outliers in the ramachandran plots with unfavorable dihedral angles. 
+			Whereas, the chi1-chi2 plots had no oultiers. The chi1 chi2 side chain torsion angle combinations for all 
+			residue types whose side chains are sufficiently long to have these angles
+			<div id="x" ></div>
+			<script>var img = document.createElement("img");
+   			 img.src = "procheck_val.png";
+				img.height = img.height*.4
+				var div = document.getElementById("x");
+    			div.appendChild(img);
+			</script>
 			<br><br>
 		</p>
 	</div>
