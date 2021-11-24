@@ -121,8 +121,17 @@
 	<div class="myDiv" style="background-color:rgb(175, 240, 202);">
 		<h2>3D Structure Prediction in SwissModel and Phyre2 </h2>
 		<p>I used SwissModel and Phyre2 to predict protein structure.
+			SwissModel Model 1 was chosen because it had 
+			40% sequence identity compared to 24% in Model 2.
 			<br><br>
-
+			<div id="y" ></div>
+			<script>var img = document.createElement("img");
+				img.src = "Swiss_model_SERHL_HUMAN.png";
+				img.height = 400
+				//img.height = img.height*.5
+				var div = document.getElementById("y");
+				div.appendChild(img);
+				</script>
 			<br><br>
 		</p>
 	</div>
@@ -141,10 +150,11 @@
 			residue types whose side chains are sufficiently long to have these angles
 			<div id="x" ></div>
 			<script>var img = document.createElement("img");
-   			 img.src = "procheck_val.png";
-				img.height = img.height*.4
+				img.src = "procheck_val.png";
+				img.height = 400
+				//img.height = img.height*.5
 				var div = document.getElementById("x");
-    			div.appendChild(img);
+				div.appendChild(img);
 			</script>
 			<br><br>
 		</p>
@@ -166,6 +176,7 @@
 			<br><br>
 		</p>
 	</div>
+
 </body>
 
 </html>
